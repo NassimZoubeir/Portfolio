@@ -1,0 +1,103 @@
+body {
+    background-color: rgb(52, 124, 207);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+/* Premier h1 */
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    padding: 0px;
+    color: black;
+    text-align: center;
+    
+}
+/* --------------------Barre de naviguation------------------------ */
+.nav {
+    height: 80px;
+    width: 100%;
+    background: white;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+}
+/* Mon logo  */
+.img-logo {
+    height: 80px;
+    width: 80px;
+}
+.navbar {
+    margin: auto;
+    top: 0;
+    left: 0;
+}
+
+#nav li {
+    display: inline;
+    flex-direction: row;
+    font-style: normal;
+    font-family: sans-serif;
+    list-style: none;
+    margin: 0px 20px;
+    
+}
+#nav a {
+    color: black;
+    font-size: 2.2em;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    
+}
+#nav a:hover {
+    background-color: rgb(52, 124, 207);;
+}
+/* ---------------WELCOME---------------------------------- */
+.welcome-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(62deg,
+    #3a3d40 0%, #181719 100%);
+}
+#welcome-section h1 {
+    color: white;
+    font-size: 4rem;
+    font-weight: 800;
+
+}
+#welcome-section p {
+    color: white;
+    font-size: 2rem;
+    font-weight: 200;
+    font-style: italic;
+   
+} 
+/*--------------------------- Fin Welcome --------------------------------------- */
+
+/* ------------------- ABOUT ----------------------------------- */
+
+img {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: left;
+}
+#about {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(52, 124, 207);
+}
+.kanki {
+    justify-content: left;
+}
