@@ -103,7 +103,6 @@ img {
 .kanki {
     width: 300px;
     height: 400px;
-    filter: drop-shadow(5px 15px 15px black);
 }
 /* ---------------------------------------- PROJET ------------------------------------------- */
 .projects h2 {
