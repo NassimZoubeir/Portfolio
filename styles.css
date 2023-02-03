@@ -10,7 +10,7 @@ body {
     height: 70px;
     width: 100%;
     background: white;
-    /* position: fixed; */
+    position: fixed;
     display: flex;
     justify-content: center;
 }
