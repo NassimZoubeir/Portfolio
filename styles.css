@@ -13,6 +13,7 @@ body {
     position: fixed;
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 .img-logo {
     height: 70px;
@@ -102,6 +103,7 @@ img {
 .kanki {
     width: 300px;
     height: 400px;
+    padding-top: 3.5%;
 }
 /* ---------------------------------------- PROJET ------------------------------------------- */
 .projects h2 {
@@ -109,6 +111,8 @@ img {
     color: white;
     text-align: center;
     filter: drop-shadow(2px 4px 6px black);
+    box-sizing: border-box;
+    padding-top: 5%;
 }
 .project-img {
     height: 300px;
@@ -132,14 +136,14 @@ img {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 4rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5rem;
     width: 100%;
     max-width: 1280px;
     margin: auto 0;
     margin-bottom: 6rem;
-    align-items: flex-end;
-    margin: 0 70px;
+    margin: 0 270px;
+    
 
     
 }
@@ -148,13 +152,14 @@ img {
     font-size: 3.2rem;
     color: white;
     text-align: center;
+    padding-top: 5%;
     filter: drop-shadow(2px 4px 6px black);
 }
 .contact p {
     font-size: 2.2rem;
     text-align: center;
     color: white;
-    filter: drop-shadow(2px 4px 6px black);
+    /* filter: drop-shadow(2px 4px 6px black); */
     
 }
 .plan {
