@@ -59,7 +59,7 @@ body {
     color: white;
     font-size: 4rem;
     font-weight: 800;
-    letter-spacing: 15px;
+    letter-spacing: 0px;
     filter: drop-shadow(2px 4px 6px rgb(52, 124, 207));
     
 }
@@ -115,7 +115,7 @@ img {
     padding-top: 5%;
 }
 .project-img {
-    height: 300px;
+    height: 200px;
     width: 378px;
 }
 .project-title {
@@ -138,7 +138,7 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 5rem;
-    width: 100%;
+    width: 100%; 
     max-width: 1280px;
     margin: auto 0;
     margin-bottom: 6rem;
@@ -159,14 +159,14 @@ img {
     font-size: 2.2rem;
     text-align: center;
     color: white;
-    /* filter: drop-shadow(2px 4px 6px black); */
+    filter: drop-shadow(2px 4px 6px black);
     
 }
 .plan {
-   width: 450px; 
-   height: 400px;
+   width: 350px; 
+   height: 300px;
    border-radius: 30px;
-   margin: 0 700px;
+   margin: 0 750px;
 }
 /* -------------------------------------------------FORMULAIRE--------------------------------------------- */
 
@@ -194,8 +194,7 @@ form {
   }
   
   input, textarea {
-    /* Pour s'assurer que tous les champs texte ont la même police.
-       Par défaut, les textarea ont une police monospace */
+    /* Pour s'assurer que tous les champs texte ont la même police.*/
     font: 1em sans-serif;
   
     /* Pour que tous les champs texte aient la même dimension */
