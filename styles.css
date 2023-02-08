@@ -144,19 +144,22 @@ img {
 
 }
 @media screen and (max-width: 1499px) {
-  .bloc {
-    width: 90%;
-    border-radius: 5px;
-  }
-  .bloc p {
-    font-size: 0.9em;
-    color: aqua;
-  }
-  #nav li {
+
+.img-logo {
+    height: 57px;               /* 100px et 90px*/
+    width: 70px;
+}
+#nav a {
+  color: black;
+  font-size: 1.4em;
+  text-decoration: none;
+  padding: 1rem 2rem;  
+}
+#nav li {
     display: contents;
 }
 .nav {
-  height: 100px;
+  height: 57px;
 }
   #welcome-section p {
     font-size: 1rem;
@@ -175,28 +178,51 @@ img {
   width: 300px;
   height: 600px;
   padding-top: 20.5%;
+  padding-top: 6%;
 }
 .projects h2 {
   font-size: 2.2rem;
-  padding-top: 25%;
+  padding-top: 6%;
 }
 
 .bloc {
-  width: 700px; 
+  width: 1300px; 
   height: 550px;
   border-radius: 20px;
-}
-}
-@media screen and (max-width: 1499px) {
+  padding-top: 6%;
 
+}
+.plan {
+  padding-top: 4%;
+  
+}
 #contact h2 {
   font-size: 2.2rem;
-  padding-top: 25%;
+  padding-top: 6%;
 }
 #contact p {
   font-size: 1.2rem;
   text-align: center;
 }
+}
+
+/*@media screen and (max-width: 500px) {
+
+#nav li {
+    display: flex;
+}
+.nav {
+  height: 235px;
+}
+.img-logo {
+  height: 87px;               
+  width: 90px;
+  justify-content: center;
+}
+  #contact h2 {
+    padding-top: 15%;
+    color: aqua;
+  }
 
 }
 /* --------------------------------------CONTACT------------------------------------------------------- */
