@@ -1,54 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  /* border: 1px solid red;  */
+  font-family: cursive;
+  letter-spacing: 0.3px;
+  word-spacing: 3px;
+  scroll-behavior: smooth;
+}
+
 body {
-    background-color: rgb(52, 124, 207);
-    margin: 0;
-    padding: 0;
+  background: rgb(20,20,226);
+  background: linear-gradient(62deg, rgba(20,20,226,0.8477766106442577) 0%, rgba(29,76,214,0.65) 8%, rgba(60,141,172,0.8267682072829132) 14%, rgba(35,227,215,0.6530987394957983) 20%, rgba(9,121,101,0.75) 32%, rgba(9,121,101,1) 39%, rgba(5,125,187,1) 53%, rgba(9,121,101,1) 75%, rgba(0,224,255,0.9864320728291317) 100%);
     width: 100%;
     height: 100%;
 }
 /* -------------------------------------Barre de naviguation----------------------------------------- */
 .nav {
-    height: 70px;
-    width: 100%;
-    background: white;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    z-index: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 135px;
+  position: fixed;
+  top: 0;
+  font-size: 2rem;
+  z-index: 2;
+  background-color: white;
 }
-.img-logo {
-    height: 70px;
-    width: 70px;
-  }
-  .img-logo:hover {
-    margin-top: 50%;
-    transform: scale(2);
-    
-  }
-.navbar {
-    margin: auto;
-    top: 0;
-    left: 0;
+#logo {
+  background: url(./goku100.png) center/cover;
+  width: 50px;
+  height: 130px;
+  transition: 1.25s;
 }
-#nav li {
-    display: inline;
-    flex-direction: row;
-    font-style: normal;
-    font-family: sans-serif;
-    list-style: none;
-    margin: 0px 50px;
+#logo:hover {
+  background: url(./goku300.png) center/cover;
+  transition: 1.25s;
 }
 
-#nav a {
-    color: black;
-    font-size: 2.2em;
-    text-decoration: none;
-    padding: 1rem 2rem;  
-    transition: all 1s ease-out;
+a {
+  color: black;
+  font-weight: bold;
 }
-#nav a:hover, a:focus {
-  color: white;
-  background-color: rgb(52, 124, 207);
-}
+
 
 /* -----------------------------------------WELCOME-------------------------------------------------- */
 .welcome-section {
@@ -58,28 +55,38 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(62deg,
-    #3a3d40 0%, #181719 100%);
 
 }
 #welcome-section h1 {
     color: white;
     font-size: 4rem;
-    font-weight: 800;
+    font-weight: 750;
     filter: drop-shadow(2px 4px 6px rgb(52, 124, 207));
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10px;
 }
 #welcome-section p {
     color: white;
     font-size: 2rem;
-    font-weight: 200;
+    font-weight: 180;
     font-style: italic;
     letter-spacing: 2px;
     filter: drop-shadow(2px 4px 6px rgb(52, 124, 207));
+    margin-left: 5%;
+    margin-right: 5%;
 } 
 /* ------------------------------------------ ABOUT ---------------------------------------------- */
 
 img {
     display: flex;
+}
+#bt-1 {
+  display: flex;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  margin-top: -235px;
 }
 #about {
     width: 100%;
@@ -88,15 +95,13 @@ img {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: rgb(52, 124, 207);
-    
-    
 }
 #about h1 {
     color: white;
     font-size: 4rem;
     font-weight: 800;
     filter: drop-shadow(2px 4px 6px black);
+    margin-top: 10px;
 }  
 #about p {
     color: white;
@@ -104,19 +109,32 @@ img {
     font-weight: 200;
     font-style: italic;
     filter: drop-shadow(2px 4px 6px black);
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
 }
 .image {
     width: 300px;
     height: 400px;
-    padding-top: 3.5%;
+    margin-top: 30px;
+    transition: 1.5s;
+    box-shadow: 17px 12px 13px 6px rgb(0 0 0 / 75%);
+    filter: sepia(60%);
   }
   .image:hover {
-    transform: rotate(60deg);
+    transform: rotate(13deg);     /*60deg*/
     transform-origin: 15% 40%;
     height: 200px;
     width: 150px;
+    transition: 1.5s;
+    margin-bottom: 1.5%;
+    filter: drop-shadow(16px 16px 20px rgb(255, 255, 255)) invert(5%)  sepia(100%);
   }
+
 /* ---------------------------------------- PROJET ------------------------------------------- */
+h2 {
+  align-items: center;
+}
 .projects h2 {
     font-size: 3.2rem;
     color: white;
@@ -160,7 +178,8 @@ img {
   transform: scale(1.2);
 
 }
-@media screen and (max-width: 1499px) {
+
+/* @media screen and (max-width: 1499px) {
 
 .img-logo {
     height: 57px;              
@@ -220,7 +239,7 @@ img {
   font-size: 1.2rem;
   text-align: center;
 }
-}
+} */
 
 /* --------------------------------------CONTACT------------------------------------------------------- */
 .contact h2 {
@@ -253,8 +272,8 @@ img {
 
 form {
   /* Centrer le formulaire sur la page */
-  margin: 0 auto;
-  width: 500px;
+  margin-left: 5%;
+  margin-right: 5%;
     
   /* Encadré pour voir les limites du formulaire */
   padding: 1em;
@@ -314,7 +333,7 @@ textarea {
   /* ------------------------------------------FOOTER----------------------------------------- */
 
   .footer {
-    padding: 40px 0;
+    padding: 10px 0;
     background-image: linear-gradient(62deg,
     #3a3d40 0%, #181719 100%);
     color:#ffffff;
@@ -346,7 +365,7 @@ textarea {
   
   .footer .social {
     text-align:center;
-    padding-bottom:25px;
+    padding-bottom: 10px;
   }
   
   .footer .social > a {
@@ -373,4 +392,35 @@ textarea {
     font-size:15px;
     color:#aaa;
     margin-bottom:0;
+  }
+
+  .list-inline {
+    display: flex;
+    justify-content: center;
+  }
+  
+
+  @media screen and (max-width: 650px){
+    a {
+      font-size: 1.25rem
+    }
+    #welcome-section h1 {
+      margin-bottom: 20px;
+    }
+    .nav {
+      height: 100px;
+    }
+    #logo {
+      height: 100px;
+    }
+  }
+  @media screen and (max-width: 1095px){
+    #welcome-section p {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+    #welcome-section h1 {
+      font-size: 3rem;
+      text-align: center;
+    }
   }
