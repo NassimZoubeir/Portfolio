@@ -15,71 +15,90 @@
          <div>
                 <ul class="nav">
                     <li class="navbar">
+
                         <div id="logo" class="navbar"></div>
+
                     </li>
                     <li id="nav-home" class="navbar">
+
                         <a href="#welcome-section">Home</a>
+
                     </li>
                     <li class="nav-about" class="navbar">
+
                         <a href="#bt-1">About</a>
+
                     </li>
                     <li id="nav-projet" class="navbar">
-                        <a href="#projects">Project</a>
+
+                        <a href="#bt-2">Project</a>
+
                     </li>
                     <li class="nav-contact" class="navbar">
-                        <a href="#contact">Contact</a>
+
+                        <a href="#bt-3">Contact</a>
+
                     </li>
                 </ul>
         </div>
     </main>
 
     <section id="welcome-section" class="welcome-section">
+
         <h1>Welcome to my Portfolio</h1>
         <p>My name is Zoubeir Nassim. I am a junior web developer.</p>
+
     </section>
 
     <section id="about" class="about">
-        <img class="image" src="./Kanki.jpg" alt="Kanki">
+
+        <img class="image" src="./assets/img/Kanki.jpg" alt="Kanki">
+
         <div id="bt-1"></div>
+
         <h1>ABOUT ME</h1>
         <p>I was studying economics and then I decided to turn to
             computer science since two years.</p>
         <p>Skills : HTML/CSS Javascript.</p>
+
     </section>
 
     <section id="projects" class="projects">
 
         <h2>MY PROJECTS</h2>
 
+        <div id="bt-2"></div>   
+
         <div class="grid">
+
             <div class="grid-item">
-                <img src="./projet1.jpg" alt="Image Projet 1" class="project-img" />
+                <img src="./assets/img/projet1.jpg" alt="Image Projet 1" class="project-img" />
                 <p class="project-title">Project 1</p>
             </div>
 
             <div class="grid-item">
-                <img src="./projet2.jpg" alt="Image Projet 2" class="project-img" />
+                <img src="./assets/img/projet2.jpg" alt="Image Projet 2" class="project-img" />
                 <p class="project-title">Project 2</p>
             </div>
 
             <div class="grid-item">
-                <img src="./projet3.jpg" alt="Image Projet 3" class="project-img" />
+                <img src="./assets/img/projet3.jpg" alt="Image Projet 3" class="project-img" />
                 <p class="project-title">Project 3</p>
             </div>
 
             <div class="grid-item">
-                <img src="./projet4.jpg" alt="Image Projet 4" class="project-img" />
+                <img src="./assets/img/projet4.jpg" alt="Image Projet 4" class="project-img" />
                 <p class="project-title">Project 4</p>
             </div>
 
             <div class="grid-item">
-                <img src="./projet5.jpg" alt="Image Projet 5" class="project-img" />
+                <img src="./assets/img/projet5.jpg" alt="Image Projet 5" class="project-img" />
                 <p class="project-title">Project 5</p>
 
             </div>
 
             <div class="grid-item">
-                <img src="./projet6.jpg" alt="Image Projet 6" class="project-img" />
+                <img src="./assets/img/projet6.jpg" alt="Image Projet 6" class="project-img" />
                 <p class="project-title">Project 6</p>
             </div>
 
@@ -90,34 +109,36 @@
 
         <h2>CONTACT</h2>
 
+        <div id="bt-3"></div>
+
         <p>AFPA Centre de Marseille Saint Jerome 54 Boulevard Lavéran 13013 Marseille</p>
 
         <div class="bloc">
-            <img class="plan" alt="Image Afpa" src="./Afpa.png">
+            <img class="plan" alt="Image Afpa" src="./assets/img/Afpa.png">
         </div>
 
-        <br><br>
+        
+        <div class="container">
 
-        <form action="/" method="post">
-            <div>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="user_name">
-            </div>
-            <div>
-                <label for="email">E-mail</label>
-                <input type="email" id="mail" name="user_mail">
-            </div>
-            <div>
-                <label for="msg">Message</label>
-                <textarea id="msg" name="user_message" value="Message"></textarea>
-            </div>
+            <h1>Formulaire de contact</h1>
 
-            <div class="button">
-                <button type="submit">Submit</button>
-            </div>
-        </form>
+            <form action="/">
+                
+              <label for="fname">Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Name">
+          
+              <label for="emailAddress">Email</label>
+              <input id="emailAddress" type="email" name="email" placeholder="Email">
+          
+          
+              <label for="subject">Message</label>
+              <textarea id="subject" name="subject" placeholder="Message" style="height:100px"></textarea>
+          
+              <input type="submit" value="Envoyer">
+            </form>
+          </div>
 
-    </section> <br>
+    </section>
 
     <div class="footer">
         <footer>
