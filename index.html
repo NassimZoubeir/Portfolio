@@ -12,7 +12,8 @@
 </head>
 <body>
     <main>
-         <div>
+        <header>
+            <nav>
                 <ul class="nav">
                     <li class="navbar">
 
@@ -40,7 +41,8 @@
 
                     </li>
                 </ul>
-        </div>
+            </nav>
+        </header>
     </main>
 
     <section id="welcome-section" class="welcome-section">
@@ -67,7 +69,7 @@
 
         <h2>MY PROJECTS</h2>
 
-        <div id="bt-2"></div>   
+        <div id="bt-2"></div>
 
         <div class="grid">
 
@@ -106,51 +108,52 @@
     </section>
 
     <section id="contact" class="contact">
-
         <h2>CONTACT</h2>
 
         <div id="bt-3"></div>
 
         <p>AFPA Centre de Marseille Saint Jerome 54 Boulevard Lavéran 13013 Marseille</p>
 
-        <div class="bloc">
-            <img class="plan" alt="Image Afpa" src="./assets/img/Afpa.png">
+        <div class="grid-2">
+
+            <div class="bloc">
+                <img class="plan" alt="Image Afpa" src="./assets/img/Afpa.png">
+            </div>
+
+
+            <div class="container">
+
+                <h1>Formulaire de contact</h1>
+
+                <form action="/">
+
+                    <label for="fname">Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Name">
+
+                    <label for="emailAddress">Email</label>
+                    <input id="emailAddress" type="email" name="email" placeholder="Email">
+
+
+                    <label for="subject">Message</label>
+                    <textarea id="subject" name="subject" placeholder="Message"></textarea>
+
+                    <input type="submit" value="Envoyer">
+                </form>
+            </div>
         </div>
-
-        
-        <div class="container">
-
-            <h1>Formulaire de contact</h1>
-
-            <form action="/">
-                
-              <label for="fname">Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Name">
-          
-              <label for="emailAddress">Email</label>
-              <input id="emailAddress" type="email" name="email" placeholder="Email">
-          
-          
-              <label for="subject">Message</label>
-              <textarea id="subject" name="subject" placeholder="Message" style="height:100px"></textarea>
-          
-              <input type="submit" value="Envoyer">
-            </form>
-          </div>
-
     </section>
 
     <div class="footer">
         <footer>
             <div class="social">
-                <a href="#"><i class="icon ion-social-instagram"></i></a>
-                <a href="https://github.com/NassimZoubeir" target="_blank"><i class="icon ion-social-github"></i></a>
-                <a href="#"><i class="icon ion-social-twitter"></i></a>
-                <a href="#"><i class="icon ion-social-facebook"></i></a>
+                <a href="https://github.com/" target="_blank"><i class="icon ion-social-github"></i></a>
                 <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/?hl=fr" target="_blank"><i class="icon ion-social-instagram"></i></a>
+                <a href="https://twitter.com/?lang=fr" target="_blank"><i class="icon ion-social-twitter" target="_blank"></i></a>
+                <a href="https://fr-fr.facebook.com/" target="_blank"><i class="icon ion-social-facebook" target="_blank"></i></a>
             </div>
             <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#welcome-section">Home</a></li>
                 <li class="list-inline-item"><a href="#about">About</a></li>
                 <li class="list-inline-item"><a href="#projects">Project</a></li>
                 <li class="list-inline-item"><a href="#contact">Contact</a></li>
