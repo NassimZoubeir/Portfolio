@@ -8,6 +8,7 @@
   letter-spacing: 0.3px;
   word-spacing: 3px;
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 body {
