@@ -94,6 +94,10 @@
         font-weight: 100;
         margin-top: 70%;
     }
+    .bottom-rectangle p {
+        font-size: 17px;
+        margin-top: 25%;
+    }
 }
 @media screen and (min-width: 1500px) and (max-width: 1655px) {
     .left-rectangle p {
@@ -105,5 +109,9 @@
         font-size: 17px;
         font-weight: 100;
         margin-top: 70%;
+    }
+    .bottom-rectangle {
+        font-size: 25px;
+        
     }
 }
