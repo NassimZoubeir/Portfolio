@@ -82,11 +82,28 @@
     margin-top: 69px;
     color: black;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1600px) {
 
-     * p {
-      
-        font-size: 40px;
+     .left-rectangle p {
+        font-size: 25px;
         font-weight: 100;
+        margin-top: 70%;
+    }
+    .right-rectangle p {
+        font-size: 17px;
+        font-weight: 100;
+        margin-top: 70%;
+    }
+}
+@media screen and (min-width: 1500px) and (max-width: 1655px) {
+    .left-rectangle p {
+        font-size: 25px;
+        font-weight: 100;
+        margin-top: 70%;
+    }
+    .right-rectangle p {
+        font-size: 17px;
+        font-weight: 100;
+        margin-top: 70%;
     }
 }
