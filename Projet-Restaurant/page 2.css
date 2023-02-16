@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+.background {
+    background: url(./assets/img/fond.png) center/cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+   
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    grid-gap: 5rem; 
+  }
+.plats {
+
+    width: 290px;
+    height: 145px;
+    border-radius: 70px;
+} 
+p {
+    color: yellow
+}
+h2 {
+    color: white;
+}
