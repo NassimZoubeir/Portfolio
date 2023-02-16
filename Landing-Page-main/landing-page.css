@@ -1,0 +1,435 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#page-principale {
+    background: gray;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -10;
+}
+
+#titre {
+  display: flex;
+  top: 29vh;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 62px;
+  z-index: -2;
+}
+
+.trapezoides {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  background: red;
+  opacity: 50%;
+  top: 50%;
+  transform: perspective(10px) rotateX(1deg);
+  rotate: 90deg;
+}
+
+/* NAVBAR */
+
+
+#navbar {
+    width: 100vw;
+    position: absolute;
+    height: 70px;
+    background: white;
+    align-items: center;
+    display: flex;
+}
+#restau-name{
+    position: absolute;
+    left: 10vw;
+    height: 2rem;
+}
+.band {
+    height: 300px;
+    width: 110px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+    border-radius: 0 0 100px 100px;
+    left: 50%;
+    top: -126px;
+    z-index: -1;
+    transition: 0.75s;
+    transform: translateX(-50%);
+}
+#logo, .alt-logo {
+    height: 90px;
+    position: absolute;
+    bottom: 5px;
+    border-radius: 100px;
+}
+.alt-logo {
+    height: 70px;
+    border-radius: 0;
+    border: 0;
+    bottom: 20px;
+}
+#logo:hover {
+    filter: contrast(300%);
+    box-shadow: 3px 3px 3px gray;
+}
+.alt-logo:hover {
+    filter: contrast(120%);
+}
+#band-logo-name {
+    height: 32px;
+    position: absolute;
+    rotate: 90deg;
+    top: 86px;
+}
+.alt-logo-name {
+    height: 190px;
+    position: absolute;
+    top: 5px;
+}
+.band:hover {
+    top: 66px;
+    transition: 0.75s;
+}
+
+#band-home {
+    position: absolute;
+    left: 62.5%;
+    background-color: #3E5BF0;
+}
+#band-plats {
+    left: 75%;
+}
+#band-contact {
+    left: 87.5%;
+    background-color: #FF0000;
+}
+.alt-band {
+    width: 90px;
+}
+@media screen and (max-width: 1000px) {
+    #navbar {
+        height: 50px;
+    }
+    .band {
+      height: 220px;
+      width: 105px;
+      top: -82px;
+      border-radius: 0 0 50px 50px;
+    }
+    #logo {
+      height: 75px;
+      bottom: 6px;
+    }
+    .alt-logo {
+      height: 62px;
+      bottom: 18px;
+    }
+    #band-logo-name {
+      height: 22px;
+      top: 57px;
+    }
+    .alt-logo-name {
+      height: 126px;
+      top: 8px;
+    }
+    .alt-band {
+      width: 75px;
+    }
+    #band-home {
+        left: 65%;
+    }
+    #band-plats {
+        left: 77.5%;
+    }
+    #band-contact {
+        left: 90%;
+    }
+    .band:hover {
+        top: 47px;
+    }
+  }
+  @media screen and (max-width: 780px) {
+    #navbar {
+        height: 40px;
+    }
+    #restau-name{
+        height: 1.25rem;
+    }
+    .band {
+      height: 190px;
+      width: 82px;
+      top: -85px;
+      border-radius: 0 0 40px 40px;
+    }
+    #logo {
+      height: 56px;
+      bottom: 5px;
+    }
+    .alt-logo {
+      height: 42px;
+      bottom: 14px;
+    }
+    #band-logo-name {
+      height: 19px;
+      top: 60px;
+    }
+    .alt-logo-name {
+      height: 107px;
+      top: 19px;
+    }
+    .alt-band {
+      width: 60px;
+    }
+    #band-home {
+        left: 65%;
+    }
+    #band-plats {
+        left: 77.5%;
+    }
+    #band-contact {
+        left: 90%;
+    }
+    .band:hover {
+        top: 27px;
+    }
+  }
+  @media screen and (max-width: 580px) {
+    #navbar {
+        height: 40px;
+    }
+    #restau-name{
+        height: 1.25rem;
+    }
+    .band {
+      height: 190px;
+      width: 68px;
+      top: -85px;
+      border-radius: 0 0 40px 40px;
+    }
+    #logo {
+      height: 53px;
+      bottom: 5px;
+    }
+    .alt-logo {
+      height: 38px;
+      bottom: 14px;
+    }
+    #band-logo-name {
+      height: 19px;
+      top: 60px;
+    }
+    .alt-logo-name {
+      height: 108px;
+      top: 17px;
+    }
+    .alt-band {
+      width: 48px;
+    }
+    #band-home {
+        left: 65%;
+    }
+    #band-plats {
+        left: 77.5%;
+    }
+    #band-contact {
+        left: 90%;
+    }
+    .band:hover {
+        top: 27px;
+    }
+  }
+  @media screen and (max-width: 460px) {
+    #navbar {
+        height: 40px;
+    }
+    #restau-name{
+        height: 1.25rem;
+    }
+    .band {
+      height: 180px;
+      width: 57px;
+      top: -85px;
+      border-radius: 0 0 40px 40px;
+    }
+    #logo {
+      height: 48px;
+      bottom: 5px;
+    }
+    .alt-logo {
+      height: 35px;
+      bottom: 14px;
+    }
+    #band-logo-name {
+      height: 18px;
+      top: 60px;
+    }
+    .alt-logo-name {
+      height: 100px;
+      top: 18px;
+    }
+    .alt-band {
+      width: 40px;
+    }
+    #band-home {
+        left: 65%;
+    }
+    #band-plats {
+        left: 77.5%;
+    }
+    #band-contact {
+        left: 90%;
+    }
+    .band:hover {
+        top: 27px;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    #navbar {
+        height: 35px;
+    }
+    #restau-name{
+        height: 1.25rem;
+    }
+    .band {
+      height: 170px;
+      width: 48px;
+      top: -85px;
+      border-radius: 0 0 40px 40px;
+    }
+    #logo {
+      height: 43px;
+      bottom: 5px;
+    }
+    .alt-logo {
+      height: 32px;
+      bottom: 10px;
+    }
+    #band-logo-name {
+      height: 18px;
+      top: 55px;
+    }
+    .alt-logo-name {
+      height: 95px;
+      top: 20px;
+    }
+    .alt-band {
+      width: 35px;
+    }
+    #band-home {
+        left: 65%;
+    }
+    #band-plats {
+        left: 77.5%;
+    }
+    #band-contact {
+        left: 90%;
+    }
+    .band:hover {
+        top: 27px;
+    }
+  }
+
+  /* CARROUSSEL  */
+
+  /* ENSEMBLE DES COMPOSANTS VISUELS DU CAROUSEL HORIZONTAL PROJETS */
+  #carousel {
+    justify-content: center;
+    display: flex;
+    position: relative;
+    top: 32vh;
+    z-index: -2;
+  }
+
+/* ZONE WRAPPANT L'ENSEMBLE, MODIFIER ICI POUR STYLISER LA BOX */
+
+.carousel-wrapper {
+  height: 320px;
+  position: absolute;
+  width: 700px;
+  margin: 50px auto ;
+  border: 2px solid black;
+  border-radius: 10%;
+  z-index: -1;
+}
+
+/* EFFET HOVER BOX CAROUSEL */
+
+.carousel-wrapper:hover {
+  scale: 1.05;
+  transition: 0.5s;
+}
+.carousel-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 50px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.arrow{
+  border: solid 2px rgb(255, 255, 255);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 12px;
+  
+}
+.arrow-prev {
+  left: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(135deg);
+
+}
+.arrow-next {
+  right: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+[id^= "item"] {
+  display: none;
+}
+/* POUR MODIFIER IMAGE CAROUSEL, CHANGER URL VERS UNE AUTRE IMAGE */
+/* VOIR COMMENTAIRE HTML POUR RAJOUTER UNE NOUVELLE IMAGE */
+
+.item-1 {
+  z-index: 2;
+  opacity: 1;
+  background: url('./assets/img/restau1.jpg') center/cover;
+  border-radius: 10%;
+  
+}
+.item-2 {
+  background: url('./assets/img/restau2.webp') center/cover;
+  border-radius: 10%;
+  
+}
+.item-3 {
+  background: url('./assets/img/restau3.jpg') center/cover;
+  border-radius: 10%;
+  
+}
+
+*:target ~ .item-1{
+  opacity: 0;
+  
+}
+#item-1:target ~ .item-1 {
+  opacity: 1;
+
+}
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+  z-index: 3;
+  opacity: 1;
+}
+
+/* FIN DU CAROUSEL */
