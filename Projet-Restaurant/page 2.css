@@ -1,30 +1,384 @@
 * {
     margin: 0;
     padding: 0;
+    list-style-type: none;
     /* border: 1px solid red; */
 }
-.background {
-    background: url(./assets/img/fond.png) center/cover;
+body {
+    background-color: rgb(68, 63, 57);
+}
+/* .background {
     width: 100%;
     height: 100%;
     position: absolute;
+    z-index: 1;
+    background: url(./assets/img/fond.png) center/cover;
    
+} */
+/* NAVBAR */
+
+#navbar {
+    width: 100vw;
+    position: absolute;
+    height: 70px;
+    background: white;
+    align-items: center;
+    display: flex;
 }
+#restau-name{
+    position: absolute;
+    left: 10vw;
+    height: 2rem;
+}
+.band {
+    height: 300px;
+    width: 110px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+    border-radius: 0 0 100px 100px;
+    left: 50%;
+    top: -126px;
+    z-index: -1;
+    transition: 0.75s;
+    transform: translateX(-50%);
+}
+#logo, .alt-logo {
+    height: 90px;
+    position: absolute;
+    bottom: 5px;
+    border-radius: 100px;
+}
+.alt-logo {
+    height: 70px;
+    border-radius: 0;
+    border: 0;
+    bottom: 20px;
+}
+#logo:hover {
+    filter: contrast(300%);
+    box-shadow: 3px 3px 3px gray;
+}
+.alt-logo:hover {
+    filter: contrast(120%);
+}
+#band-logo-name {
+    height: 32px;
+    position: absolute;
+    rotate: 90deg;
+    top: 86px;
+}
+.alt-logo-name {
+    height: 190px;
+    position: absolute;
+    top: 5px;
+}
+.band:hover {
+    top: 66px;
+    transition: 0.75s;
+}
+
+#band-home {
+    position: absolute;
+    left: 62.5%;
+    background-color: #3E5BF0;
+}
+#band-plats {
+    left: 75%;
+}
+#band-contact {
+    left: 87.5%;
+    background-color: #FF0000;
+}
+.alt-band {
+    width: 90px;
+}
+
+@media screen and (max-width: 1000px) {
+    #navbar {
+        height: 50px;
+    }
+    .band {
+      height: 220px;
+      width: 105px;
+      top: -82px;
+      border-radius: 0 0 50px 50px;
+    }
+    #logo {
+      height: 75px;
+      bottom: 6px;
+    }
+    .alt-logo {
+      height: 62px;
+      bottom: 18px;
+    }
+    #band-logo-name {
+      height: 22px;
+      top: 57px;
+    }
+    .alt-logo-name {
+      height: 126px;
+      top: 8px;
+    }
+    .alt-band {
+      width: 75px;
+    }
+    #band-home {
+        left: 65%;
+    }
+    #band-plats {
+        left: 77.5%;
+    }
+    #band-contact {
+        left: 90%;
+    }
+    .band:hover {
+        top: 47px;
+    }
+}
+  @media screen and (max-width: 780px) {
+    #navbar {
+        height: 40px;
+    }
+    #restau-name{
+        height: 1.25rem;
+    }
+    .band {
+      height: 190px;
+      width: 82px;
+      top: -85px;
+      border-radius: 0 0 40px 40px;
+    }
+    #logo {
+      height: 56px;
+      bottom: 5px;
+    }
+    .alt-logo {
+      height: 42px;
+      bottom: 14px;
+    }
+    #band-logo-name {
+      height: 19px;
+      top: 60px;
+    }
+    .alt-logo-name {
+      height: 107px;
+      top: 19px;
+    }
+    .alt-band {
+      width: 60px;
+    }
+    #band-home {
+        left: 65%;
+    }
+    #band-plats {
+        left: 77.5%;
+    }
+    #band-contact {
+        left: 90%;
+    }
+    .band:hover {
+        top: 27px;
+    }
+  }
+  @media screen and (max-width: 580px) {
+    #navbar {
+        height: 40px;
+    }
+    #restau-name{
+        height: 1.25rem;
+    }
+    .band {
+      height: 190px;
+      width: 68px;
+      top: -85px;
+      border-radius: 0 0 40px 40px;
+    }
+    #logo {
+      height: 53px;
+      bottom: 5px;
+    }
+    .alt-logo {
+      height: 38px;
+      bottom: 14px;
+    }
+    #band-logo-name {
+      height: 19px;
+      top: 60px;
+    }
+    .alt-logo-name {
+      height: 108px;
+      top: 17px;
+    }
+    .alt-band {
+      width: 48px;
+    }
+    #band-home {
+        left: 65%;
+    }
+    #band-plats {
+        left: 77.5%;
+    }
+    #band-contact {
+        left: 90%;
+    }
+    .band:hover {
+        top: 27px;
+    }
+  }
+  @media screen and (max-width: 460px) {
+    #navbar {
+        height: 40px;
+    }
+    #restau-name{
+        height: 1.25rem;
+    }
+    .band {
+      height: 180px;
+      width: 57px;
+      top: -85px;
+      border-radius: 0 0 40px 40px;
+    }
+    #logo {
+      height: 48px;
+      bottom: 5px;
+    }
+    .alt-logo {
+      height: 35px;
+      bottom: 14px;
+    }
+    #band-logo-name {
+      height: 18px;
+      top: 60px;
+    }
+    .alt-logo-name {
+      height: 100px;
+      top: 18px;
+    }
+    .alt-band {
+      width: 40px;
+    }
+    #band-home {
+        left: 65%;
+    }
+    #band-plats {
+        left: 77.5%;
+    }
+    #band-contact {
+        left: 90%;
+    }
+    .band:hover {
+        top: 27px;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    #navbar {
+        height: 35px;
+    }
+    #restau-name{
+        height: 1.25rem;
+    }
+    .band {
+      height: 170px;
+      width: 48px;
+      top: -85px;
+      border-radius: 0 0 40px 40px;
+    }
+    #logo {
+      height: 43px;
+      bottom: 5px;
+    }
+    .alt-logo {
+      height: 32px;
+      bottom: 10px;
+    }
+    #band-logo-name {
+      height: 18px;
+      top: 55px;
+    }
+    .alt-logo-name {
+      height: 95px;
+      top: 20px;
+    }
+    .alt-band {
+      width: 35px;
+    }
+    #band-home {
+        left: 65%;
+    }
+    #band-plats {
+        left: 77.5%;
+    }
+    #band-contact {
+        left: 90%;
+    }
+    .band:hover {
+        top: 27px;
+    }
+  }
+
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 300px);
+    grid-template-columns: repeat(5, 20%);
     justify-content: center;
-    grid-gap: 5rem; 
+    text-align: center;
+    width: 85vw;
+    top: 210px;
+    position: absolute;
+    z-index: -15;
+    height: 70%;
+    grid-gap: 10px;
+    margin-left: 10%;
   }
 .plats {
-
-    width: 290px;
-    height: 145px;
+    width: 100%;
+    height: 140px;
     border-radius: 70px;
-} 
-p {
-    color: yellow
+    border: 5px solid black;
+    position: relative;
+    top: 10px;
+   
+}
+.plat {
+    margin-bottom: 10%;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: content-box;
+    display: grid;
+    width: 85%;
+}
+
+
+li {
+    color: rgb(255, 255, 255);
+    margin-bottom: 3px;
+    font-size: 1em;
+    font-weight: 400;
 }
 h2 {
-    color: white;
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    font-weight: 600;
+    top: 15px;
+    position: relative;
+}
+ul {
+    position: relative;
+    bottom: -17px;
+    width: 100%;
+}
+#plat-special {
+    top: 12px;
+}
+@media screen and (max-width: 768px) {
+  .grid {
+    display: block;
+  }
+  .grid .plat {
+    width: 60%;
+  }
+  .plats {
+    width: 60%;
+  }
 }

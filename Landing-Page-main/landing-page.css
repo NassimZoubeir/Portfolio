@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    /* overflow: hidden; */
 }
 
 #page-principale {
@@ -21,8 +22,8 @@
   z-index: -2;
 }
 
-.trapezoides {
-  width: 200px;
+.trapezoides1 {
+  width: 350px;
   height: 200px;
   position: absolute;
   background: red;
@@ -30,6 +31,46 @@
   top: 50%;
   transform: perspective(10px) rotateX(1deg);
   rotate: 90deg;
+  left: -3%;
+}
+.trapezoides2 {
+  width: 350px;
+  height: 200px;
+  position: absolute;
+  background: blue;
+  opacity: 50%;
+  top: 50%;
+  transform: perspective(10px) rotateX(1deg);
+  rotate: -90deg;
+  right: -3%;
+}
+.trapezoides3 {
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  background: yellow;
+  opacity: 50%;
+  top: 76%;
+  left: 41%;
+  transform: perspective(10px) rotateX(1deg);
+}
+.trapezoides1 p {
+  color: black;
+  text-align: center;
+  font-size: 1.5em;
+  rotate: 270deg;
+}
+.trapezoides2 p {
+  color: black;
+  text-align: center;
+  font-size: 1.6em;
+  rotate: 90deg;
+}
+
+.trapezoides3 p {
+  color: black;
+  text-align: center;
+  font-size: 1.8em;
 }
 
 /* NAVBAR */
@@ -153,7 +194,7 @@
     .band:hover {
         top: 47px;
     }
-  }
+}
   @media screen and (max-width: 780px) {
     #navbar {
         height: 40px;
