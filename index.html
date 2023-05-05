@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio</title>
         <link rel="stylesheet" href="style.css">
+        <script src=" https://smtpjs.com/v3/smtp.js"></script>
         <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +37,7 @@
                     <span class="two">Je m'appelle</span>
                 </div>
                 <h1>Nassim</h1>
-                <h3>Développeur<span> Web.</span></h3>
+                <h3 id="dev">Développeur<span> Web.</span></h3>
                 <p>Hello ! Je m'appelle Nassim, j'ai 24 ans. <br> 
                 Je suis actuellement à la recherche d'un stage en développement web.</p>
                 <div class="button">
@@ -205,9 +206,9 @@
 
             <div class="contact-form">
                 <form action="">
-                    <input type="name" placeholder="Votre Nom" required>
-                    <input type="email" placeholder="Votre Adresse mail" required>
-                    <textarea name="" id="" cols="35" rows="10" placeholder="Votre message" required></textarea>
+                    <input id="name" type="name" placeholder="Votre Nom" required>
+                    <input id="email" type="email" placeholder="Votre Adresse mail" required>
+                    <textarea name="" id="" cols="35" rows="10" placeholder="Votre message" ></textarea>
                     <input type="submit" value="Envoyer" class="submit" required>
                 </form>
             </div>
