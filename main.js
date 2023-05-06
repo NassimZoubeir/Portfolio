@@ -74,8 +74,6 @@ emailInput.addEventListener("input", () => {
     }
 });
 
-
-
 // ----------------------------------------------------------- ENVOIE DE L'EMAIL ------------------------------------------------------------------------------
 
 const name = document.getElementById('name');
@@ -86,16 +84,6 @@ const submit = document.getElementsByClassName('form-contact')[0];
 submit.addEventListener('submit', (e)=> {
   e.preventDefault();
   console.log('Clicked');
-
-//   Email.send({
-//     SecureToken : "cb6fac5d-a9e6-4047-bdc5-adb0d1bc5cee",
-//     To : 'nassimz@outlook.fr',
-//     From : "nassimz@outlook.fr",
-//     Subject : "Test email",
-//     Body : "Test par Nassim Zoubeir"
-// }).then(
-//   message => alert(message)
-// )
 
 Email.send({
   Host : "smtp.elasticemail.com",
@@ -109,8 +97,6 @@ Email.send({
 message => alert(message)
 );
 })
-
-
 
 // ---------------------------------------------------------------------- API ----------------------------------------------------------------------------------
 const apiKey = "32fa87f340afa8257e73875d024490e8";
