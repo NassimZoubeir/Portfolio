@@ -114,7 +114,7 @@ message => alert(message)
 
 // ---------------------------------------------------------------------- API ----------------------------------------------------------------------------------
 const apiKey = "32fa87f340afa8257e73875d024490e8";
-const url = `https://api.openweathermap.org/data/2.5/weather?q=Paris&appid=${apiKey}`;
+const url = `https://api.openweathermap.org/data/2.5/weather?q=Marseille&appid=${apiKey}`;
 
 fetch(url)
   .then(response => {
@@ -124,10 +124,18 @@ fetch(url)
     return response.json();
   })
   .then(data => {
-    console.log(data);
-    // Utiliser les données pour afficher la météo de Paris
+    const weatherDiv = document.getElementById("weather");
+    const temperature = Math.round(data.main.temp - 273.15);
+    const description = data.weather[0].description;
+    const iconCode = data.weather[0].icon;
+    const iconUrl = `https://openweathermap.org/img/w/${iconCode}.png`;
+
+    weatherDiv.innerHTML = `
+      <h2>Prévisions météo pour Marseille</h2>
+      <p>Il fait ${temperature}°C avec ${description}.</p>
+      <img src="${iconUrl}" alt="${description}" />
+    `;
   })
   .catch(error => {
     console.error("There was a problem with the fetch operation:", error);
   });
-

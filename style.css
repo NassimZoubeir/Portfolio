@@ -171,6 +171,10 @@ header.sticky {
     border-bottom: 1px solid #ffffff1a;
     padding: 12px 15%;
 }
+#weather {
+    text-align: center;
+    margin-top: 2rem;
+}
 .about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
