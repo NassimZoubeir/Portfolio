@@ -1,38 +1,13 @@
 # Portfolio
-Titre de votre Portfolio
-[Insérez ici le nom de votre portfolio et, éventuellement, une brève description]
+Mon Portfolio
 
-Description
-[Insérez ici une description détaillée de votre projet, y compris son objectif, son public cible et les technologies utilisées]
+Voici mon portfolio qui a pour objectif de me présenter moi ainsi que les projets que j'ai pu réaliser dans le cadre de ma formation. Le but est de pouvoir le présenter aux recruteurs dans le cadre de ma recherche de stage. Ce site a été réaliser en utilisant HTML , CSS et Javascript.
 
-Fonctionnalités
-[Insérez ici une liste des fonctionnalités de votre projet]
+Ce site permet d'accéder à mon github en cliquant sur un bouton sur ma page d'accueil. Il est aussi possible de voir mes projets réalisés et d'y acceder en survolant l'image du projet grace à un bouton qui ouvrira un lien vers le projet en question. Enfin il est possible ,grace à un formulaire présent dans ma section contact, de me contacter directement par mail. Il y a aussi un lien vers mon Linkedin.
 
-[Fonctionnalité 1]
-[Fonctionnalité 2]
-[Fonctionnalité 3]
-[etc.]
-Technologies utilisées
-[Insérez ici une liste des technologies utilisées dans votre projet, y compris les langages de programmation, les frameworks, les bibliothèques, les bases de données, etc.]
+Pour installer mon projet il suffit de le cloner, le récuperer sur son bureau puis l'ouvrir avec Visual Studio Code.
 
-[Technologie 1]
-[Technologie 2]
-[Technologie 3]
-[etc.]
-Captures d'écran
-[Insérez ici des captures d'écran de votre projet pour montrer ses différentes fonctionnalités]
-
-Installation
-[Insérez ici des instructions détaillées pour installer votre projet, y compris les prérequis, les dépendances, les commandes à exécuter, etc.]
-
-Utilisation
-[Insérez ici des instructions détaillées pour utiliser votre projet, y compris comment naviguer dans l'interface utilisateur, comment interagir avec les différentes fonctionnalités, etc.]
-
-Contributions
-[Insérez ici des informations sur la façon dont les autres peuvent contribuer à votre projet, y compris les instructions pour cloner votre référentiel, les règles de contribution, etc.]
-
-Licence
-[Insérez ici le nom de la licence sous laquelle votre projet est distribué, ainsi que des informations supplémentaires sur les droits d'auteur, les responsabilités, etc.]
+Mon projet est très simple à utiliser la barre de naviguation permet d'accéder à chaque section du site , tout comme il est possible de pouvoir scroller de haut en bas jusqu'à la derniere section. Cette dernière section comporte un bouton retour vers le haut pour retourner à la section d'accueil.
 
 Contact
-[Insérez ici vos coordonnées de contact, y compris votre adresse e-mail, votre profil LinkedIn, votre compte GitHub, etc.]
+Voici mes coordonnées pour me contacter  nassimz@outlook.fr et mon Linkedin : https://www.linkedin.com/in/nassim-zoubeir-7a079b218/ 
