@@ -19,35 +19,35 @@ window.onscroll = () => {
 
 // --------------------------------------------------------------------------- ANIMATION HOME ------------------------------------------------------------------------------------
 
-// var text = "Développeur Web";
-// var index = 0;
-
-// function dev() {
-//     var typingDiv = document.getElementById("dev");
-//     typingDiv.innerHTML = text.substring(0, index) + "|";
-//     index++;
-//     if (index > text.length) {
-//         index = 0;
-//     }
-//     setTimeout(dev, 180);
-// }
-// dev();
-
-// SANS LA REPETITION 
 var text = "Développeur Web";
 var index = 0;
-var typingDiv = document.getElementById("dev");
 
 function dev() {
+    var typingDiv = document.getElementById("dev");
     typingDiv.innerHTML = text.substring(0, index) + "|";
     index++;
     if (index > text.length) {
-        clearInterval(intervalId);
-        typingDiv.innerHTML = text; // pour retirer le curseur
+        index = 0;
     }
+    setTimeout(dev, 180);
 }
+dev();
 
-var intervalId = setInterval(dev, 150);
+// SANS LA REPETITION 
+// var text = "Développeur Web";
+// var index = 0;
+// var typingDiv = document.getElementById("dev");
+
+// function dev() {
+//     typingDiv.innerHTML = text.substring(0, index) + "|";
+//     index++;
+//     if (index > text.length) {
+//         clearInterval(intervalId);
+//         typingDiv.innerHTML = text; // pour retirer le curseur
+//     }
+// }
+
+// var intervalId = setInterval(dev, 150);
 //------------------------------------------------------------------- CONDITION DU FORMULAIRE --------------------------------------------------------------------
 
 const nameInput = document.getElementById("name");
