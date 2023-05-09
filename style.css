@@ -106,7 +106,6 @@ section {
     font-size: var(--big-font);
     font-weight: 700;
     color: var(--text-color);
-    list-style: 1.1;
     margin: 0 0 8px;
 }
 .home-text h3 {
