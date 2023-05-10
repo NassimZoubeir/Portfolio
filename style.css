@@ -89,7 +89,8 @@ section {
     position: relative;
     height: 100vh;
     width: 100%;
-    background: var(--second-bg-color);
+    /* background: var(--second-bg-color); */
+    background-image: url(/assets/img/Gotham.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -119,6 +120,9 @@ section {
     font-size: 20px;
     font-weight: 500;
 }
+#two {
+    color: var( --text-color);
+}
 
 .home-text h1 {
     font-size: var(--big-font);
@@ -138,8 +142,11 @@ section {
 .home-text p {
     color: var(--text-color);
     font-size: var(--p-font);
-    line-height: 1.8;
-    margin-bottom: 40px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    /* line-height: 1.8;
+    margin-bottom: 40px; */
+
 }
 
 .button {
