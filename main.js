@@ -101,7 +101,7 @@ message => alert(message)
 
 // ---------------------------------------------------------------------- APPEL API ----------------------------------------------------------------------------------
 const apiKey = "32fa87f340afa8257e73875d024490e8";
-const url = `https://api.openweathermap.org/data/2.5/weather?q=Marseille&appid=${apiKey}`;
+const url = `https://api.openweathermap.org/data/2.5/weather?q=Marseille&lang=fr&appid=${apiKey}`;
 
 fetch(url)
   .then(response => {

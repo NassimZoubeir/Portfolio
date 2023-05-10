@@ -171,7 +171,7 @@ section {
     font-size: 15px;
     font-weight: 600;
     color: var(--text-color);
-    margin-left: 35px;
+    /* margin-left: 35px; */
 }
 
 .btn2 span i {
