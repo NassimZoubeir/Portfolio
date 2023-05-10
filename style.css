@@ -24,6 +24,12 @@ body {
     color: var(--text-color)
 }
 
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
 /*----------------------------------------------------------------------------------- NAVBAR -------------------------------------------------------------------------------------- */
 header {
     position: fixed;
@@ -83,7 +89,7 @@ span {
 /*----------------------------------------------------------------------------------- HOME -------------------------------------------------------------------------------------- */
 section {
     padding: 160px 15% 120px;
-    /* height: 100vh; */ /* Regler la hauteur des section pour gerer le soucis du clic */ 
+    height: 100vh;
 }
 
 .home {
@@ -91,7 +97,7 @@ section {
     height: 100vh;
     width: 100%;
     /* background: var(--second-bg-color); */
-    background-image: url(/assets/img/Gotham.jpg);
+    background-image: url(/assets/img/Gotham.webp);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -121,8 +127,9 @@ section {
     font-size: 20px;
     font-weight: 500;
 }
+
 #two {
-    color: var( --text-color);
+    color: var(--text-color);
 }
 
 .home-text h1 {
@@ -132,7 +139,7 @@ section {
     margin: 0 0 8px;
 }
 
-.home-text h3 {
+.home-text h2 {
     color: var(--text-color);
     margin: 0 0 35px;
     font-size: 3rem;
@@ -221,8 +228,6 @@ header.sticky {
 
 .about-img img {
     max-width: 530px;
-    height: auto;
-    width: 100%;
     border-radius: 8px;
 }
 
@@ -231,7 +236,7 @@ header.sticky {
     line-height: 1;
 }
 
-.about-text h4 {
+.about-text h3 {
     font-size: 24px;
     font-weight: 600;
     color: var(--text-color);
@@ -259,6 +264,7 @@ header.sticky {
     color: var(--second-color);
     font-size: 15px;
     margin-bottom: 15px;
+    /* margin-top: -40px; */ /* Redimensionner les projets dans la section */
 }
 
 .main-text h2 {
@@ -339,7 +345,6 @@ header.sticky {
 }
 
 .row img {
-    width: 100%;
     border-radius: 8px;
     display: block;
     transition: transform 0.5s;
@@ -363,7 +368,7 @@ header.sticky {
     transition: height 0.5s;
 }
 
-.layer h5 {
+.layer h3 {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 15px;
@@ -405,16 +410,16 @@ header.sticky {
     gap: 2.5rem;
 }
 
-.contact-text h4 {
+.contact-text h2 {
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+
+.contact-text h3 {
     color: var(--text-color);
     margin: 18px 0;
     font-size: 20px;
     font-weight: 600;
-}
-
-.contact-text h2 {
-    font-size: var(--h2-font);
-    line-height: 1;
 }
 
 .contact-text p {
@@ -467,7 +472,8 @@ header.sticky {
     position: relative;
 }
 
-.contact-form form input, form textarea {
+.contact-form form input,
+form textarea {
     width: 100%;
     padding: 14px;
     background: var(--bg-color);
@@ -535,6 +541,7 @@ header.sticky {
 
     section {
         padding: 110px 3% 60px;
+        height: 100%;
     }
 
     .end {
@@ -550,7 +557,7 @@ header.sticky {
         transition: .1s;
     }
 
-    .home-text h3 {
+    .home-text h2 {
         font-size: 2.5rem;
     }
 
@@ -569,11 +576,6 @@ header.sticky {
         order: 0;
     }
 
-    .about-img img {
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-    }
 
     .contact {
         grid-template-columns: 1fr;
